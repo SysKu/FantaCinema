@@ -1,17 +1,18 @@
+
 * {box-sizing: border-box;}
 .header {
     overflow: hidden;
-    background-color: #030303;
+    background-color:rgb(27, 27, 27);
     padding: 30px 20px;
-    font-family: 'Perfograma';
+    font-family: 'Hazel Deco Light';
   }
   body { 
     margin: 0;
-    font-family: 'garamond';
+    font-family: 'Baskerville Old Face';
   }
   .header a {
-    float: left;
-    color: rgb(255, 255, 255);
+    float: center;
+    color:goldenrod;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -26,13 +27,13 @@
   }
   
   .header a:hover {
-    background-color: rgb(86, 45, 90);
-    color: rgb(248, 244, 244);
+    background-color:#04356A;
+    color: gold;
   }
   
-  .header a.active {
-    background-color: rgb(86, 45, 90);
-    color: white;
+  .header a:active {
+    background-color: #04356A;
+    color:rgb(248, 171, 28);
   }
   
   .header-right {
@@ -49,3 +50,4 @@
       float: none;
     }
 }
+
