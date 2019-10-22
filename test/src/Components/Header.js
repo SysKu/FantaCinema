@@ -1,14 +1,21 @@
+/* eslint-disable react/jsx-no-duplicate-props */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react" 
+import "./Header.css";
 
- class Header extends React.Component {
+class Header extends React.Component {
+   // eslint-disable-next-line no-useless-constructor
+   constructor (props) {
+     super(props);
+   }
     render() {
       return (
         <div className="header">
-            <IMG src= "MovieZonePrick.PNG" ALT = "MovieZone" width="200" Height= "150"/>
-            <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#LogIn" ><button onclick="document.getElementById('id01').style.display='block'" 
-                style="width:50%;">Login</button></a>
+            <img src= "TheBigScreenHeader.png" ALT = "TheBigScreen" width="290" height= "150"/>
+            <div className="header-right">
+            <a className="active" className= "hover" href="" onClick={event => {this.props.pageToShow("Hej hej");
+            event.preventDefault();}}>Home</a>
+            <a className="active" classname= "hover" href="">Login</a> 
             </div>
         </div>
       )
